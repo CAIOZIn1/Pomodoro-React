@@ -67,7 +67,7 @@ function PomodoroTimer(props: Props) {
                     onClick={() => configureRest(false)}
                 ></Button>
                 <Button
-                    className={!working && !resting ? 'hidden' : null}
+                    className={!working && !resting ? 'hidden' : ''}
                     text={timeCounting ? 'Pause' : 'Continuar'}
                     onClick={() => setTimeCounting(!timeCounting)}
                 ></Button>
